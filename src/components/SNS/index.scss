@@ -1,0 +1,328 @@
+.sns-block{
+  padding: min( 20px , 30Px ) min( 42px , 85Px );
+  background-color: #daedff;
+  .sns-title{
+    color: rgb(5, 55, 105);
+    font-family: wfont_bcfe31_b9499057ac834ee796dd280bfec964c1, wf_b9499057ac834ee796dd280bf, orig_koruribold;
+    font-size: min( 28px , 45Px );
+    margin-bottom: 6px;
+  }
+  .sns-list{
+    display: flex;
+    gap: @minmax(7px);
+    flex-wrap: wrap;
+    .line{
+      border-left: 2Px solid #000;
+      height: 52px;
+      &.line-7{
+        display: none;
+      }
+    }
+    .sns-item{
+      height: min( 70px , 80Px );
+      padding-left: min( 4px , 6Px );
+      padding-right: min( 36px , 40Px );
+      .title{
+        font-size: min( 11px ,18Px );
+        font-family: wfont_b31635_df283e25f2614502bae196db17f312dd, wf_df283e25f2614502bae196db1, orig_kazesawasemibold;
+      }
+      .icons{
+        display: flex;
+        margin-top: 8px;
+        gap: min( 10px , 12Px );
+        .btn{
+          text-align: center;
+        }
+        .icon svg{
+          width: min( 13px , 21Px );
+          height: min( 13px , 21Px );
+        }
+        .text{
+          white-space: nowrap;
+          margin-top: max( -3px , -5Px );
+          font-size: min( 8px , 11Px );
+          font-family: wfont_bcfe31_b9499057ac834ee796dd280bfec964c1, wf_b9499057ac834ee796dd280bf, orig_koruribold;
+        }
+      }
+      &.item-1{
+        padding-left: 0;
+        padding-right: 15px;
+        .icons{
+          justify-content: center;
+        }
+      }
+      &.item-3{
+        .icons{
+          gap: @minmax(4px);
+          .icon:first-child{
+            margin-right: min( 10px , 13Px );
+          }
+        }
+      }
+      &.item-7{
+        padding-right: 0;
+      }
+      &.item-3, &.item-4, &.item-5, &.item-6{
+        padding-right: min( 9px , 13Px );
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1501px) {
+  .sns-block{
+    .sns-list{
+      justify-content: space-between;
+      .line{
+        height: 50Px!important;
+      }
+      .sns-item{
+        padding-right: 0!important;
+        .icons{
+          margin-top: 4Px;
+          gap: 5px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:1001px) and (max-width:1500px) {
+  .sns-block{
+    .sns-list{
+      justify-content: space-between;
+      .line{
+        height: 50Px!important;
+      }
+      .sns-item{
+        padding-right: 0!important;
+        .icons{
+          margin-top: 4Px;
+          gap: 10px;
+        }
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 1000px) and (min-width: 751px) {
+  .sns-block{
+    .sns-title{
+      margin-bottom: 15px;
+    }
+    .sns-list{
+      .line{
+        height: 72px;
+      }
+      .sns-item{
+        .icons{
+          gap: 15px;
+          margin-top: 11px;
+          .icon svg{
+            width: 27px;
+            height: 27px;
+          }
+        }
+        margin-bottom: 22px;
+        &.item-2{
+          margin-right: 55px;
+        }
+        &.item-3{
+          margin-right: 44px;
+          .icons{
+            gap: 17px;
+          }
+        }
+        &.item-4{
+          padding-left: 10px;
+          padding-right: 75px;
+        }
+        &.item-5{
+          margin-right: 80px;
+        }
+        &.item-6{
+          padding-left: 15px;
+          margin-right: 80px;
+        }
+        &.item-7{
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) and (min-width: 321px) {
+  .sns-block{
+    padding-bottom: 90px;
+    .sns-title{
+      font-size: 60px;
+      padding-top: 95px;
+      margin-bottom: 48px;
+    }
+    .sns-list{
+      margin-left: 3px;
+      .line-1{
+        height: 90px;
+      }
+      .line-2, .line-3, .line-5{
+        display: none;
+      }
+      .line-4, .line-6{
+        height: 79px;
+      }
+      .sns-item{
+        height: auto;
+        padding-left: 30px;
+        margin-bottom: 15px;
+        .title{
+          font-size: 38px;
+        }
+        .icons{
+          margin-top: 6px;
+          .icon svg{
+            width: 35px;
+            height: 35px;
+          }
+        }
+        &.item-1{
+          padding-right: 45px;
+          padding-left: 0;
+          .icons{
+            justify-content: flex-start;
+            .icon{
+              margin-left: 8px;
+            }
+          }
+        }
+        &.item-2 {
+          padding-right: 15Px;
+          padding-left: 20Px;
+          .icons{
+            gap: 18Px;
+          }
+        }
+        &.item-3 {
+          padding-right: 355px;
+          padding-left: 0;
+          padding-bottom: 30px;
+          .icons{
+            gap: 15Px;
+            .text{
+              font-size: 10Px;
+            }
+          }
+        }
+        &.item-4 {
+          padding-left: 0;
+          padding-right: 32px;
+        }
+        &.item-5{
+          padding-left: 32px;
+          padding-right: 76px;
+        }
+        &.item-6{
+          padding-left: 0;
+          padding-right: 60px;
+          .icons{
+            gap: 53px;
+          }
+        }
+        &.item-7{
+          padding-left: 35px;
+        }
+        &.item-4, &.item-5, &.item-7{
+          .icons{
+            gap: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 370px) {
+  .sns-block{
+    padding-bottom: 90px;
+    .sns-title{
+      font-size: 60px;
+      padding-top: 95px;
+      margin-bottom: 48px;
+    }
+    .sns-list{
+      margin-left: 3Px;
+      .line-1{
+        height: 90px;
+      }
+      .line-2, .line-3, .line-5{
+        display: none;
+      }
+      .line-4, .line-6{
+        height: 79px;
+      }
+      .sns-item{
+        height: auto;
+        padding-left: 30Px;
+        margin-bottom: 15px;
+        .title{
+          font-size: 38px;
+        }
+        .icons{
+          margin-top: 6px;
+          .icon svg{
+            width: 20Px;
+            height: 20Px;
+          }
+        }
+        &.item-1{
+          padding-right: 45px;
+          padding-left: 0;
+          .icons{
+            justify-content: flex-start;
+            .icon{
+              margin-left: 8px;
+            }
+          }
+        }
+        &.item-2 {
+          padding-right: 15Px;
+          padding-left: 20Px;
+          .icons{
+            gap: 18Px;
+          }
+        }
+        &.item-3 {
+          padding-right: 355px;
+          padding-left: 0;
+          padding-bottom: 30px;
+          .icons{
+            gap: 15Px;
+            .text{
+              font-size: 10Px;
+            }
+          }
+        }
+        &.item-4 {
+          padding-left: 0;
+          padding-right: 32px;
+        }
+        &.item-5{
+          padding-left: 32px;
+          padding-right: 76px;
+        }
+        &.item-6{
+          padding-left: 0;
+          padding-right: 0;
+          .icons{
+            gap: 13Px;
+          }
+        }
+        &.item-7{
+          padding-left: 5Px;
+        }
+        &.item-4, &.item-5, &.item-7{
+          .icons{
+            gap: 35px;
+          }
+        }
+      }
+    }
+  }
+}

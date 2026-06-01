@@ -1,0 +1,105 @@
+.banner{
+  .item{
+    position: relative;
+    display: flex;
+    .banner-text{
+      position: absolute;
+      white-space: nowrap;
+      z-index: 20;
+      font-family: wfont_bcfe31_b9499057ac834ee796dd280bfec964c1, wf_b9499057ac834ee796dd280bf, orig_koruribold !important;
+      line-height: 1;
+      color: #14508c;
+      letter-spacing: 3.7px;
+      p{
+        font-size: min( 37px , 57Px);
+        line-height: 1;
+        margin: 0;
+        margin-bottom: min( 14px, 25Px );
+      }
+    }
+    &.type1{
+      flex-direction: row-reverse;
+      margin-bottom: 3%;
+      .banner-text{
+        left: min( 55px , 90Px );
+        top: min( 80px , 143Px );
+      }
+      .banner-img{
+        width: 57.7%;
+      }
+    }
+    &.type2{
+      .banner-img{
+        width: 50.5%;
+      }
+      .banner-text{
+        left: 54.2%;
+        top: 30%;
+        letter-spacing: 1px;
+        p{
+          font-size: min( 29px , 57Px);
+          margin-bottom: 2%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .banner{
+    padding: 0 13px;
+  }
+}
+@media screen and (max-width:1000px) and (min-width: 751px) {
+  .banner{
+    .item{
+      &.type1{
+        .banner-text{
+          left: 7.8vw;
+          top: 5.2vw;
+        }
+        .banner-img{
+          width: 59.9%;
+          height: 41.5vw;
+        }
+        margin-bottom: 3.3vw;
+      }
+      &.type2{
+        .banner-img{
+          width: 57.6%;
+          height: 32vw;
+        }
+        .banner-text{
+          top: 10vw;
+          left: 60.5%;
+          letter-spacing: 0px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .banner{
+    .item{
+      &.type1{
+        margin-bottom: 3%;
+        .banner-text{
+          top: 15.5%;
+          left: 6%;
+        }
+        .banner-img{
+          width: 68.1%;
+        }
+      }
+      &.type2{
+        .banner-text{
+          left: 53.2%;
+          top: 34%;
+          p{
+            margin-bottom: 2%;
+          }
+        }
+      }
+    }
+  }
+}

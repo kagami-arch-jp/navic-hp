@@ -1,0 +1,121 @@
+.footer{
+  background: #053769;
+  padding-top: @minmax(18px);
+  *{
+    color: #fff;
+    text-decoration: none;
+    font-family: wfont_b31635_df283e25f2614502bae196db17f312dd, wf_df283e25f2614502bae196db1, orig_kazesawasemibold;
+    -webkit-font-smoothing: antialiased;
+  }
+  ul{
+    margin: 0;
+    padding-left: 0;
+  }
+  li{
+    list-style: none;
+    white-space: nowrap;
+  }
+  .detail{
+    margin: 0 min( 100px , 150Px );
+    display: flex;
+    justify-content: center;
+    .links-box{
+      margin-left: max( -75px , -85Px );
+    }
+    .footer-links-top{
+      margin-left: min( 25px , 33Px ) ;
+      ul{
+        margin-left: 0;
+        margin-top: @minmax(16px);
+        margin-bottom: @minmax(9px);
+        li{
+          margin-bottom: min( 5px , 9Px );
+          font-size: min( 12px , 19Px );
+          a{
+            font-size: min( 12px , 19Px );
+          }
+        }
+      }
+    }
+    .footer-links-group{
+      display: flex;
+      .links{
+        display: flex;
+        .group{
+          margin-left: min( 25px , 33Px ) ;
+          margin-top: 3px;
+          margin-right: min( 15px , 21Px );
+          &:nth-child(3) {
+            margin-left: min( 27px , 40Px );
+            margin-right: min( 27px , 40Px );
+          }
+          *{
+            white-space: nowrap;
+          }
+          h4{
+            font-size: min( 11.7px , 18Px );
+            margin: 0;
+          }
+          ul{
+            padding-left: @minmax(8px);
+            margin-top: @minmax(9px);
+            position: relative;
+            &:before{
+              content: ' ';
+              position: absolute;
+              left: 0;
+              top: 0;
+              height: 90%;
+              border-left: 1px solid #fff;
+            }
+            li{
+              display: flex;
+              line-height: 1;
+              margin-bottom: min( 10px , 15Px );
+              a{
+                font-size: min( 9.5px , 14Px );
+                white-space: nowrap;
+              }
+            }
+          }
+          .legal-links{
+            margin-top: min( 20px , 30Px );
+            padding-left: 0;
+            &:before{
+              display: none;
+            }
+          }
+        }
+      }
+      .logo{
+        flex: none;
+        align-self: end;
+        margin-left: 7.8%;
+        margin-bottom: min( 6.5% , 60Px );
+        img{
+          width: auto;
+          height: min( 65px, 128Px );
+        }
+      }
+    }
+  }
+  .copyright{
+    font-size: 8Px;
+    text-align: center;
+    background: #134c86;
+    padding: 6px 0;
+    font-weight: 400;
+    font-family: wfont_bcfe31_b9499057ac834ee796dd280bfec964c1, wf_b9499057ac834ee796dd280bf, orig_koruribold;
+  }
+}
+@media screen and (max-width:768px) {
+  .footer{
+    padding-top: 0;
+    .detail{
+      display: none;
+    }
+    .copyright{
+      padding: 40px 0;
+    }
+  }
+}

@@ -1,0 +1,190 @@
+.service{
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background-color: #f5faff;
+  margin-top: @minmax(10px);
+  overflow: hidden;
+  .title{
+    .bg{
+      transform: rotateX(180deg) scaleX(1.5) scaleY(1.8);
+      margin-bottom: 5px;
+    }
+    .big-text{
+      color: #73acde;
+      font-size: min( 57px , 93Px );
+      font-weight: bold;
+      text-align: center;
+      font-family: wfont_bcfe31_b9499057ac834ee796dd280bfec964c1, wf_b9499057ac834ee796dd280bf, orig_koruribold;
+      margin-bottom: -8Px;
+    }
+    .subtitle{
+      color: #14508c;
+      font-size: min( 15px , 25Px );;
+      font-weight: bold;
+      font-family: roboto-bold, roboto, sans-serif;
+      padding-bottom: 15px;
+    }
+  }
+  .content{
+    background-color: #d1e2f0;
+    height: @minmax(670px);
+    display: flex;
+  }
+  .circle{
+    position: relative;
+    top: @minmax(-180px);
+    margin: 0 auto;
+    width: @minmax(600px);
+    height: @minmax(600px);
+    .svg{
+      width: @minmax(450px);
+      position: absolute;
+      top: @minmax(285px);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .logo{
+      width: @minmax(275px);
+      height: auto;
+      position: absolute;
+      left: 50%;
+      transform: translateX(@minmax(-147px));
+      top: @minmax(463px);
+    }
+    .icon{
+      background: #fff;
+      border-radius: 100%;
+      display: flex;
+      font-family: wfont_bcfe31_b9499057ac834ee796dd280bfec964c1, wf_b9499057ac834ee796dd280bf, orig_koruribold !important;
+      color: #053769;
+      position: absolute;
+      width: @minmax(135px);
+      height: @minmax(135px);
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      left: 50%;
+      transform: translateX(-50%);
+      top: @minmax(250px);
+      gap: @minmax(5px);
+
+      .lazy-image img{
+        height: 100%;
+        object-fit: contain;
+      }
+
+      div{
+        font-size: @minmax(22px);
+        line-height: 1.1;
+        font-family: wfont_bcfe31_b9499057ac834ee796dd280bfec964c1,wf_b9499057ac834ee796dd280bf,orig_koruribold;
+      }
+      .img{
+        width: @minmax(100px);
+      }
+      &.icon1{
+        top: @minmax(248px);
+        margin-left: @minmax(-6px);
+        div{
+          font-size: @minmax(22px);
+        }
+        .img{
+          margin-left: @minmax(-10px);
+          width: @minmax(110px);
+          height: auto;
+        }
+      }
+      &.icon2{
+        margin-left: @minmax(155px);
+        margin-top: @minmax(45px);
+        div{
+          font-size: @minmax(22px);
+        }
+        .img{
+          width: @minmax(96px);
+        }
+      }
+      &.icon8{
+        margin-left: @minmax(-167px);
+        margin-top: @minmax(45px);
+        gap: @minmax(3px);
+        div{
+          font-size: @minmax(19px);
+        }
+      }
+      &.icon3{
+        margin-left: @minmax(201px);
+        margin-top: @minmax(194px);
+        gap: 0px;
+        div{
+          font-size: @minmax(21px);
+        }
+        .img{
+          height: @minmax(20px);
+        }
+      }
+      &.icon7{
+        margin-left: @minmax(-218px);
+        margin-top: @minmax(194px);
+        .img{
+          margin-top: @minmax(-8px);
+        }
+      }
+      &.icon6{
+        margin-left: @minmax(-174px);
+        margin-top: @minmax(356px);
+        div{
+          font-size: @minmax(21px);
+        }
+      }
+      &.icon4{
+        margin-left: @minmax(150px);
+        margin-top: @minmax(356px);
+        gap: 0;
+        div{
+          font-size: @minmax(21px);
+        }
+        .img{
+          width: @minmax(80px);
+          margin-top: @minmax(-7px);
+        }
+      }
+      &.icon5{
+        top: @minmax(657px);
+        margin-left: @minmax(-5px);
+        gap: @minmax(2px);
+        div{
+          font-size: @minmax(22px);
+        }
+        .img{
+          margin-top: @minmax(8px);
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .service{
+    .content{
+      padding-bottom: 12.5vw;
+    }
+    .title{
+      .big-text{
+        font-size: 9.2vw;
+        margin-bottom: 3vw;
+      }
+      .subtitle{
+        display: none;
+      }
+    }
+    .circle{
+      transform: scale(1.38) translateY(-10Px);
+      transform-origin: center;
+      .icon{
+        transform: scale(.96) translateX(-50%);
+        transform-origin: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+body, html{
+  margin: 0;
+}
+body.modal-opened{
+  overflow: hidden;
+  height: 100vh;
+}
+.app{
+  display: flex;
+  flex-direction: column;
+}
+.ifr{
+  opacity: .7;
+  width: 100%;
+  z-index: 99999;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 9000px;
+  margin-top: 0;
+  display: none;
+}
+body{
+  //overflow: hidden;
+}
+
+.btn{
+  cursor: pointer;
+  user-select: none;
+}
+
+.link{
+  text-decoration: none;
+}
+
+img{
+  object-fit: cover;
+  object-position: 50% 50%;
+}
