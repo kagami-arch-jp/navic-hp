@@ -10,7 +10,7 @@
 |---------|------|
 | フレームワーク | React 19 |
 | 言語 | JSX |
-| スタイル | Sass (SCSS) + PostCSS (px-to-viewport) |
+| スタイル | Sass (SCSS) + Tailwind CSS v4 + PostCSS (px-to-viewport) |
 | バンドラー | Webpack 5 |
 | カルーセル | Swiper 12 |
 | サーバーサイド | sptc (Node.js) |
@@ -38,7 +38,7 @@
 │   ├── components/     # UI コンポーネント
 │   │   ├── Banner/
 │   │   ├── Container/
-│   │   ├── Footer/
+│   │   ├── FooterTailwind/
 │   │   ├── Header/
 │   │   ├── LazyImage/
 │   │   ├── Link/
@@ -80,3 +80,4 @@ npm run build-static
 - `postcss-px-to-viewport` により viewport 単位への自動変換を行い、レスポンシブ対応しています
 - サーバーサイドは `sptc` フレームワークを利用し、ルーティングは `server/router.s` で定義しています
 - このプロジェクトに状態管理は利用していません
+- Tailwind CSS を学習するため、既存のコンポーネントを Tailwind で順次書き換えています。第一弾として `src/components/FooterTailwind/` を Tailwind 対応しました
