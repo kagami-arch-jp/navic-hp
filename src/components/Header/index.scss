@@ -230,11 +230,9 @@
         .up, .down{
           position: absolute;
           left: 50%;
-          top: 0;
           margin-left: -300px;
           width: 12Px;
           height: 6Px;
-          margin-top: -2Px;
           svg{
             fill: rgb(20, 80, 140);
             width: 100%;
@@ -243,7 +241,10 @@
         .up{
           transform: rotateX(180deg);
           transform-origin: center;
-          top: 15Px;
+          top: 6Px;
+        }
+        .down{
+          top: 5Px;
         }
       }
       .item-subtitle{
