@@ -9,3 +9,9 @@ function rep(fn, pattern, dest) {
 rep(__dirname+'/../server/public/app/'+js[0], '/assets/app/', '')
 rep(__dirname+'/../server/public/app/'+css[0], '/assets/app/', '')
 rep(__dirname+'/../server/public/app/'+css[0], /url\("\/\//g, 'url("https://')
+
+const root = __dirname+'/..'
+fs.rmSync(root+'/index.html', {force: true})
+fs.rmSync(root+'/client', {recursive: true, force: true})
+fs.cpSync(__dirname+'/../server/public/app/index.html', root+'/index.html')
+fs.cpSync(__dirname+'/../server/public/app/client', root+'/client', {recursive: true})

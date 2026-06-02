@@ -1,16 +1,6 @@
-var autoprefixer = require('autoprefixer')
-
 module.exports = {
   plugins: [
-    autoprefixer({
-      overrideBrowserslist: [
-        'Android >= 4.0',
-        'iOS >= 6',
-        'last 5 QQAndroid versions',
-        'last 5 UCAndroid versions'
-      ],
-      cascade: true
-    }),
+    require('@tailwindcss/postcss'),
     require("postcss-px-to-viewport")({
       unitToConvert: 'px',
       viewportWidth: 1000,
@@ -23,6 +13,7 @@ module.exports = {
       mediaQuery: true,
       replace: true,
       include: 'src/**',
+      exclude: /tailwind\.css$/,
     }),
     require("postcss-px-to-viewport")({
       unitToConvert: 'wpx',
@@ -36,6 +27,7 @@ module.exports = {
       mediaQuery: true,
       replace: true,
       include: 'src/**',
+      exclude: /tailwind\.css$/,
     })
   ]
 };

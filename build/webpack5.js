@@ -108,9 +108,14 @@ const common = (isServer)=>({
     },
   },
 
-  // 開発時に自動リビルド + 再起動を行う簡易スクリプト例
-  // （別途 `scripts/start-ssr-server.js` で実装）
   watch: IS_DEV? true: false,
+  watchOptions: {
+    ignored: [
+      '**/node_modules/**',
+      '**/.git/**',
+      '**/dist/**',
+    ],
+  },
 
   // source map でデバッグしやすく
   devtool: IS_DEV? 'source-map': false,
@@ -142,7 +147,26 @@ const client = merge(common(false), {
         },
       },
       {
-        test: /\.s?[ac]ss$/i,
+        test: /\.css$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          {
+           loader: "postcss-loader",
+           options: {
+             postcssOptions: require(__dirname+"/postcss.config.js"),
+           },
+         },
+          {
+            loader: 'sptc/dist/webpack.loader.js',
+            options: {
+              file: path.resolve(__dirname, 'sptc.inject.js'),
+            }
+          },
+        ],
+      },
+      {
+        test: /\.s[ac]ss$/i,
         use: [
           MiniCssExtractPlugin.loader,
           "css-loader",

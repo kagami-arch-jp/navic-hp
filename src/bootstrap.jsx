@@ -9,6 +9,7 @@ export async function init(payload) {
 #ifndef IS_NODE_TARGET
 
 import ReactDOM from 'react-dom/client'
+import './tailwind.css'
 import './App.scss'
 const appRoot=document.querySelector('.app')
 const {payload, degradeCsr}=window.__ssrData__ || {}
