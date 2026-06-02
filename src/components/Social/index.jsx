@@ -58,13 +58,13 @@ export default () => {
       }}
     >
       <SwiperSlide className='social-item'>
-        <Link><LazyImage src={*IMG('./assets/1.jpg')} placeholder={*IMG('./assets/preview/1.jpg')} className='img' alt="social images" /></Link>
+        <Link><LazyImage src={*IMG('./assets/1.jpg')} placeholder={*IMG('./assets/preview/1.png')} className='img' alt="social images" /></Link>
       </SwiperSlide>
       <SwiperSlide className='social-item'>
-        <Link><LazyImage src={*IMG('./assets/2.jpg')} placeholder={*IMG('./assets/preview/2.jpg')} className='img' alt="social images" /></Link>
+        <Link><LazyImage src={*IMG('./assets/2.jpg')} placeholder={*IMG('./assets/preview/2.png')} className='img' alt="social images" /></Link>
       </SwiperSlide>
       <SwiperSlide className='social-item'>
-        <Link><LazyImage src={*IMG('./assets/3.jpg')} placeholder={*IMG('./assets/preview/3.jpg')} className='img' alt="social images" /></Link>
+        <Link><LazyImage src={*IMG('./assets/3.jpg')} placeholder={*IMG('./assets/preview/3.png')} className='img' alt="social images" /></Link>
       </SwiperSlide>
     </Swiper>
     <div className='btn left' onClick={()=>{

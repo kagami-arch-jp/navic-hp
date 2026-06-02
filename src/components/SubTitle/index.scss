@@ -55,8 +55,7 @@
     }
     &.link-b{
       .watermask{
-        color: #7296ba;
-        right: 200px;
+        left: 50%;
       }
     }
   }
@@ -67,9 +66,12 @@
     .text{
       font-size: 6vw;
     }
+    .watermask{
+      color: #4373a3;
+    }
     &.link-b{
       .watermask{
-        color: #4373a3;
+        left: 50%;
       }
     }
   }

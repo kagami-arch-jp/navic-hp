@@ -7,37 +7,37 @@ import LazyImage from '@/components/LazyImage'
 const list=[
     {
         "img": *IMG("./assets/250402-navic-create.jpg"),
-        "placeholder": *IMG("./assets/preview/250402-navic-create.jpg"),
+        "placeholder": *IMG("./assets/preview/250402-navic-create.png"),
         "text": "レンタル事業\n "
     },
     {
         "img": *IMG("./assets/250402-jandA.jpg"),
-        "placeholder": *IMG("./assets/preview/250402-jandA.jpg"),
+        "placeholder": *IMG("./assets/preview/250402-jandA.png"),
         "text": "J&Aオイル\n "
     },
     {
         "img": *IMG("./assets/250402-clezeed.jpg"),
-        "placeholder": *IMG("./assets/preview/250402-clezeed.jpg"),
+        "placeholder": *IMG("./assets/preview/250402-clezeed.png"),
         "text": "CLEZEED(旧CLESEED)\nショップサイト"
     },
     {
         "img": *IMG("./assets/250402-creer.jpg"),
-        "placeholder": *IMG("./assets/preview/250402-creer.jpg"),
+        "placeholder": *IMG("./assets/preview/250402-creer.png"),
         "text": "クレール\nオンラインショップ"
     },
     {
         "img": *IMG("./assets/250402-clevers-toyohashi.jpg"),
-        "placeholder": *IMG("./assets/preview/250402-clevers-toyohashi.jpg"),
+        "placeholder": *IMG("./assets/preview/250402-clevers-toyohashi.png"),
         "text": "クレヴァーズ\n豊橋店"
     },
     {
         "img": *IMG("./assets/250402-glanzeal.jpg"),
-        "placeholder": *IMG("./assets/preview/250402-glanzeal.jpg"),
+        "placeholder": *IMG("./assets/preview/250402-glanzeal.png"),
         "text": "グランジール\n豊橋店"
     },
     {
         "img": *IMG("./assets/250402-feel-toyohashi.jpg"),
-        "placeholder": *IMG("./assets/preview/250402-feel-toyohashi.jpg"),
+        "placeholder": *IMG("./assets/preview/250402-feel-toyohashi.png"),
         "text": "FEEL\n豊橋店"
     },
     {
@@ -47,17 +47,17 @@ const list=[
     },
     {
         "img": *IMG("./assets/250402-mcrent.jpg"),
-        "placeholder": *IMG("./assets/preview/250402-mcrent.jpg"),
+        "placeholder": *IMG("./assets/preview/250402-mcrent.png"),
         "text": "キャンピングカー"
     },
     {
         "img": *IMG("./assets/250402-mimitakara.jpg"),
-        "placeholder": *IMG("./assets/preview/250402-mimitakara.jpg"),
+        "placeholder": *IMG("./assets/preview/250402-mimitakara.png"),
         "text": "Mimitakara"
     },
     {
         "img": *IMG("./assets/250402-clevers-nagoya.jpg"),
-        "placeholder": *IMG("./assets/preview/250402-clevers-nagoya.jpg"),
+        "placeholder": *IMG("./assets/preview/250402-clevers-nagoya.png"),
         "text": "クレヴァーズ\n名古屋"
     },
     {
@@ -67,12 +67,12 @@ const list=[
     },
     {
         "img": *IMG("./assets/ホームページ-01.jpg"),
-        "placeholder": *IMG("./assets/preview/ホームページ-01.jpg"),
+        "placeholder": *IMG("./assets/preview/ホームページ-01.png"),
         "text": "バイクバッテリー\nナトリウムイオン"
     },
     {
         "img": *IMG("./assets/260307-02.jpg"),
-        "placeholder": *IMG("./assets/preview/260307-02.jpg"),
+        "placeholder": *IMG("./assets/preview/260307-02.png"),
         "text": "SPTA\n​日本総代理店"
     }
 ]

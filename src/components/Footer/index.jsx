@@ -93,7 +93,7 @@ function Detail() {
           </ul>
         </div>
       </div>
-      <LazyImage src={*IMG('./assets/logo.jpg')} placeholder={*IMG('./assets/preview/logo.jpg')} alt='navic logo' className='logo' />
+      <LazyImage src={*IMG('./assets/logo.jpg')} placeholder={*IMG('./assets/preview/logo.png')} alt='navic logo' className='logo' />
     </div>
     </div>
   </div>

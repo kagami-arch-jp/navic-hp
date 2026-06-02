@@ -26,45 +26,45 @@ export default function() {
           <Link className='icon icon1'>
             <div>車用品</div>
             <div>EC事業</div>
-            <LazyImage src={*IMG('./assets/logo1-1.jpg')} placeholder={*IMG('./assets/preview/logo1-1.jpg')} className='img' />
+            <LazyImage src={*IMG('./assets/logo1-1.jpg')} placeholder={*IMG('./assets/preview/logo1-1.png')} className='img' />
           </Link>
           <Link className='icon icon2'>
             <div>自社商品</div>
             <div>開発</div>
-            <LazyImage src={*IMG('./assets/logo2-1.jpg')} placeholder={*IMG('./assets/preview/logo2-1.jpg')} className='img' />
+            <LazyImage src={*IMG('./assets/logo2-1.jpg')} placeholder={*IMG('./assets/preview/logo2-1.png')} className='img' />
           </Link>
           <Link className='icon icon3'>
             <div>豊橋</div>
             <div>リテール</div>
-            <LazyImage src={*IMG('./assets/logo3-1.jpg')} placeholder={*IMG('./assets/preview/logo3-1.jpg')} className='img' />
-            <LazyImage src={*IMG('./assets/logo3-2.jpg')} placeholder={*IMG('./assets/preview/logo3-2.jpg')} className='img' />
-            <LazyImage src={*IMG('./assets/logo3-3.jpg')} placeholder={*IMG('./assets/preview/logo3-3.jpg')} className='img' />
+            <LazyImage src={*IMG('./assets/logo3-1.jpg')} placeholder={*IMG('./assets/preview/logo3-1.png')} className='img' />
+            <LazyImage src={*IMG('./assets/logo3-2.jpg')} placeholder={*IMG('./assets/preview/logo3-2.png')} className='img' />
+            <LazyImage src={*IMG('./assets/logo3-3.jpg')} placeholder={*IMG('./assets/preview/logo3-3.png')} className='img' />
           </Link>
           <Link className='icon icon4'>
             <div>健康</div>
-            <LazyImage src={*IMG('./assets/logo4-1.jpg')} placeholder={*IMG('./assets/preview/logo4-1.jpg')} className='img' />
+            <LazyImage src={*IMG('./assets/logo4-1.jpg')} placeholder={*IMG('./assets/preview/logo4-1.png')} className='img' />
           </Link>
           <Link className='icon icon5'>
             <div>グループ</div>
             <div>事業</div>
-            <LazyImage src={*IMG('./assets/logo5-1.jpg')} placeholder={*IMG('./assets/preview/logo5-1.jpg')} className='img' />
+            <LazyImage src={*IMG('./assets/logo5-1.jpg')} placeholder={*IMG('./assets/preview/logo5-1.png')} className='img' />
           </Link>
           <Link className='icon icon6'>
             <div>貿易</div>
-            <LazyImage src={*IMG('./assets/logo6-1.jpg')} placeholder={*IMG('./assets/preview/logo6-1.jpg')} className='img' />
-            <LazyImage src={*IMG('./assets/logo6-2.jpg')} placeholder={*IMG('./assets/preview/logo6-2.jpg')} className='img' />
+            <LazyImage src={*IMG('./assets/logo6-1.jpg')} placeholder={*IMG('./assets/preview/logo6-1.png')} className='img' />
+            <LazyImage src={*IMG('./assets/logo6-2.jpg')} placeholder={*IMG('./assets/preview/logo6-2.png')} className='img' />
           </Link>
           <Link className='icon icon7'>
             <div>レンタル</div>
-            <LazyImage src={*IMG('./assets/logo7-1.jpg')} placeholder={*IMG('./assets/preview/logo7-1.jpg')} className='img' />
+            <LazyImage src={*IMG('./assets/logo7-1.jpg')} placeholder={*IMG('./assets/preview/logo7-1.png')} className='img' />
           </Link>
           <Link className='icon icon8'>
             <div>車用品</div>
             <div>卸販売</div>
             <div>外注取付</div>
-            <LazyImage src={*IMG('./assets/logo8-1.jpg')} placeholder={*IMG('./assets/preview/logo8-1.jpg')} className='img' />
+            <LazyImage src={*IMG('./assets/logo8-1.jpg')} placeholder={*IMG('./assets/preview/logo8-1.png')} className='img' />
           </Link>
-          <LazyImage src={*IMG('./assets/logo.jpg')} placeholder={*IMG('./assets/preview/logo.jpg')} className='logo' />
+          <LazyImage src={*IMG('./assets/logo.jpg')} placeholder={*IMG('./assets/preview/logo.png')} className='logo' />
         </div>
       </div>
     </Container>

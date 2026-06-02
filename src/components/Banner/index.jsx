@@ -24,7 +24,7 @@ export default function() {
         </div>
         <LazyImage alt="navictop画像"
           src={isSmall? *IMG('./assets/p1-s.jpg'): *IMG('./assets/p1.jpg')}
-          placeholder={isSmall? *IMG('./assets/preview/p1-s.jpg'): *IMG('./assets/preview/p1.jpg')}
+          placeholder={isSmall? *IMG('./assets/preview/p1-s.png'): *IMG('./assets/preview/p1.png')}
           className='banner-img' />
       </div>
       <div className='item type2'>
@@ -35,7 +35,7 @@ export default function() {
         </div>
         <LazyImage alt="ナヴィックビル外観"
           src={isSmall? *IMG('./assets/p2-s.jpg'): *IMG('./assets/p2.jpg')}
-          placeholder={isSmall? *IMG('./assets/preview/p2-s.jpg'): *IMG('./assets/preview/p2.jpg')}
+          placeholder={isSmall? *IMG('./assets/preview/p2-s.png'): *IMG('./assets/preview/p2.png')}
           className='banner-img' />
       </div>
     </div>
