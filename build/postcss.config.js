@@ -1,6 +1,7 @@
 module.exports = {
   plugins: [
     require('@tailwindcss/postcss'),
+    require('postcss-nesting'),
     require("postcss-px-to-viewport")({
       unitToConvert: 'px',
       viewportWidth: 1000,

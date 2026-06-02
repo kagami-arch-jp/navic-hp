@@ -11,7 +11,7 @@ import News from '@/components/News'
 import Social from '@/components/Social'
 import Links from '@/components/Links'
 import SNS from '@/components/SNS'
-import Footer from '@/components/Footer'
+import Footer from '@/components/FooterTailwind'
 
 export default function() {
 
