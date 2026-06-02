@@ -26,11 +26,17 @@
       }
       .banner-img{
         width: 57.7%;
+        img{
+          height: 100%;
+        }
       }
     }
     &.type2{
       .banner-img{
         width: 50.5%;
+        img{
+          height: 100%;
+        }
       }
       .banner-text{
         left: 54.2%;
@@ -44,14 +50,39 @@
     }
   }
 }
-
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 1501px) {
   .banner{
-    padding: 0 13px;
+    .item{
+      &.type2{
+        .banner-img{
+          height: @minmax(335px);
+          width: @minmax(550px);
+        }
+        .banner-text{
+          margin-left: @minmax(3px);
+          top: @minmax(73px);
+          p{
+            font-size: @minmax(34px);
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1001px) {
+  .banner{
+    .item{
+      &.type1{
+        .banner-text{
+          letter-spacing: 0;
+        }
+      }
+    }
   }
 }
 @media screen and (max-width:1000px) and (min-width: 751px) {
   .banner{
+    padding: 0 13px;
     .item{
       &.type1{
         .banner-text{
@@ -80,6 +111,7 @@
 }
 @media screen and (max-width: 750px) {
   .banner{
+    padding: 0 13px;
     .item{
       &.type1{
         margin-bottom: 3%;

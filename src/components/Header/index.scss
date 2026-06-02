@@ -4,7 +4,7 @@
     position: relative;
     padding-left: 0;
     display: block;
-    width: @minmax(220px);
+    width: @minmax(216px);
     height: auto;
     top: 4%;
   }
@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    margin-left: @minmax(15px);
+    margin-left: 0;
     padding-left: @minmax(15px);
     margin-top: 4%;
     justify-content: space-around;
@@ -105,11 +105,12 @@
 @media screen and (max-width:1052px) and (min-width:1001px) {
   .header-inner{
     .logo-svg{
-      margin-top: 3%;
+      margin-top: 6%;
+      margin-left: 10px;
     }
     .header-spacer{
       padding-left: 14px;
-      padding-top: 8Px;
+      padding-top: 20px;
       flex-wrap: wrap;
       margin-top: 2.5%;
       .tab{
@@ -131,12 +132,12 @@
       width: 150px;
     }
     .header-spacer{
-      padding-left: 18px;
+      padding-left: 42px;
       padding-right: 8px;
-      margin-top: 3%;
+      margin-top: 30px;
       .tab{
         .text{
-          font-size: 13px;
+          font-size: 15px;
           font-family: wfont_b31635_2b89eea43bcd420a94b8ccf610b0aad5, wf_2b89eea43bcd420a94b8ccf61, orig_kazesawaregular;
         }
         &:last-child{
@@ -155,9 +156,9 @@
   margin-bottom: 30px;
   align-items: center;
   .header-logo{
-    margin-left: 65px;
+    margin-left: 35px;
     padding-top: 30px;
-    width: 550px;
+    width: 580px;
     img{
       width: 100%;
     }
@@ -233,6 +234,7 @@
           margin-left: -300px;
           width: 12Px;
           height: 6Px;
+          margin-top: -2Px;
           svg{
             fill: rgb(20, 80, 140);
             width: 100%;
